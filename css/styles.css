@@ -1,0 +1,55 @@
+
+.body {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+.page-title {
+	margin: 16px;
+}
+
+
+.menu-container{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 16px;
+}
+
+.menu-item{
+	background-color: #f6f6f6;
+	padding: 16px;
+	border-radius: 8px;
+	border: 1px solid;
+	border-color: #e7e7e7;
+}
+
+.menu-item h2{
+	margin-top: 0px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 576px) { ... }
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+.menu-container{grid-template-columns: 1fr 1fr}
+.menu-item-sushi{grid-column: 1/-1;}
+}
+
+
+@media (min-width: 992px) {
+.menu-container{grid-template-columns: 1fr 1fr 1fr;}
+}
+
+
+@media (min-width: 1200px) {
+	.menu-container{grid-template-columns: 1fr 1fr 1fr;}
+}
+
+
+@media (min-width: 1400px) {
+.menu-container{grid-template-columns: 1fr 1fr 1fr;}
+}
